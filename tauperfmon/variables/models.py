@@ -14,6 +14,6 @@ class Variable(models.Model):
     one_prong = models.BooleanField()
     three_prong = models.BooleanField()
     fancy = models.CharField(max_length=100, blank=True)
-    alias = models.CharField(max_length=100, blank=True)
-    units = models.CharField(max_length=3, default='', blank=True, unique=True)
+    alias = models.CharField(max_length=100, blank=True, unique=True)
+    units = models.CharField(max_length=3, default='', blank=True)
     displayunits = models.CharField(max_length=3, default='', blank=True)
