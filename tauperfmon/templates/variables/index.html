@@ -1,0 +1,10 @@
+{% if variables %}
+    <ul>
+    {% for v in variables %}
+        <li><a href="/variables/{{ v.name }}/">{{ v.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No variables are defined.</p>
+{% endif %}
+
